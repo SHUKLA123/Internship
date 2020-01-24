@@ -9,7 +9,6 @@ q1 = page_soap.findAll("p")
 
 for i in range(0,len(q1)):
   if "option" in q1[i].text:
-    print(q1[i].text)
     q2 = q1[i].findAll("strong")
     for j in q2[0:len(q2)]:
       print(j.text)
